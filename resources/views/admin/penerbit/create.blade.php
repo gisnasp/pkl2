@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Membuat Data Penerbit</div>
-                <div class="card-body">
+                    <div class="card-body">
                     <form action="{{ route('penerbit.store') }}" method="post" enctype="multipart/form-data">
                         {{ csrf_field() }}
                     <div class="form-group">

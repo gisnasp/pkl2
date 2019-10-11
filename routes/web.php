@@ -28,9 +28,23 @@ Route::group(['prefix' => 'admin','middleware' =>['auth','role:admin']],function
     Route::resource('peminjaman','PeminjamanController');
     Route::resource('detail','DetailController');
     Route::resource('penerbit','PenerbitController');
-    Route::resource('petugas','PetugasController');   
-});  
+    Route::resource('peminjam','PeminjamController');
+    Route::resource('petugas','PetugasController'); 
     Route::resource('kategori','KategoriController');
-    Route::resource('buku','BukuController');
+    Route::resource('pendaftaran','PendaftaranController');
+    
+    // Route::resource('kategori','KategoriController'); 
+});  
+    
+
+
+//     Route::group(['prefix' => 'petugas','middleware' =>['auth','role:petugas']],function(){
+//         Route::get('/',function(){
+//             return view('petugas.index');
+//  });
+//     Route::resource('petugas','PetugasController');  
+// });
     Route::resource('peminjam','PeminjamController');
     Route::resource('pendaftaran','PendaftaranController');
+
+    

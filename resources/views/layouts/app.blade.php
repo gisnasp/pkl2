@@ -39,12 +39,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/home"><b>Home</b></a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/buku') }}">Buku</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> --}}
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/detail') }}">Detail</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('admin/peminjaman') }}">Peminjaman</a>
                     </li>
@@ -62,15 +62,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/peminjam') }}">Peminjam</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('pendaftaran') }}">Pendaftaran</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/kategori') }}">Kategori</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ url('buku') }}">Buku</a>
-                    </li>
+                    </li> --}}
                     @endguest 
 
                     </ul>
@@ -80,11 +80,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                {{-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a> --}}
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    {{-- <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> --}}
                                 </li>
                             @endif
                         @else

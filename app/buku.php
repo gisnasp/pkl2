@@ -9,4 +9,13 @@ class buku extends Model
     protected $fillable = [ 'kategoris_id','penerbits_id','buku_judul','buku_jumlah','buku_deskripsi',
     'buku_pengarang','buku_terbit'];
     public $timestamp = true;
+    public function kategoris()
+    {
+        return $this->belongsTo('App\kategori','kategoris_id');
+    }
+
+    public function penerbits()
+    {
+        return $this->belongsTo('App\penerbit','penerbits_id');
+    }
 }

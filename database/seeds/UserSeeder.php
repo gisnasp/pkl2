@@ -23,6 +23,18 @@ class UserSeeder extends Seeder
         $memberRole->display_name = "Member";
         $memberRole->save();
 
+        $petugasRole = new Role();
+        $petugasRole->name = "petugas";
+        $petugasRole->display_name = "Petugas";
+        $petugasRole->save();
+
+
+        $petugas = new User();
+        $petugas->name = "Petugas";
+        $petugas->email = "petugas@gmail.com";
+        $petugas->password = bcrypt('rahasiaa');
+        $petugas->save();
+        $petugas->attachRole($petugasRole);
 
         $admin = new User();
         $admin->name = "Admin";

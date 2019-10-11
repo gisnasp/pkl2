@@ -65,9 +65,10 @@ class PeminjamController extends Controller
      * @param  \App\peminjam  $peminjam
      * @return \Illuminate\Http\Response
      */
-    public function show(peminjam $peminjam)
+    public function show($id)
     {
-        //
+        $peminjam = Peminjam::findOrFail($id);
+        return view('peminjam.show', compact('peminjam'));
     }
 
     /**
@@ -118,8 +119,9 @@ class PeminjamController extends Controller
      * @param  \App\peminjam  $peminjam
      * @return \Illuminate\Http\Response
      */
-    public function destroy(peminjam $peminjam)
+    public function destroy($id)
     {
-        //
+        $peminjam = Peminjam::destroy($id);
+        return redirect()->route('peminjam.index');
     }
 }

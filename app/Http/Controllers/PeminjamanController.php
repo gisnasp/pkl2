@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\peminjaman;
+use App\petugas;
+use App\peminjam;
 use Illuminate\Http\Request;
+
 
 class PeminjamanController extends Controller
 {
@@ -14,7 +17,7 @@ class PeminjamanController extends Controller
      */
     public function index()
     {
-        $peminjaman = Peminjaman::all();
+        $peminjaman = peminjaman::all();
         return view('admin.peminjaman.index', compact('peminjaman'));
     }
 
@@ -24,8 +27,11 @@ class PeminjamanController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {   
+        $petugas = petugas::all();
+        $peminjam = peminjam::all();
+        $peminjaman = peminjaman::all();
+        return view('admin.peminjaman.create',compact('petugas','peminjam','peminjaman'));
     }
 
     /**
@@ -36,7 +42,14 @@ class PeminjamanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $peminjaman = new peminjaman();
+        $peminjaman->petugas_id = $request->ptg_nama;
+        $peminjaman->peminjams_id = $request->pjm_nama;
+        $peminjaman->pjm_tgl = $request->pjm_tgl;
+        $peminjaman->pjm_tglkembali = $request->pjm_tglkembali;
+       
+        $peminjaman->save();
+        return redirect()->route('peminjaman.index');
     }
 
     /**
@@ -45,9 +58,12 @@ class PeminjamanController extends Controller
      * @param  \App\peminjaman  $peminjaman
      * @return \Illuminate\Http\Response
      */
-    public function show(peminjaman $peminjaman)
+    public function show($id)
     {
-        //
+        $peminjaman = Peminjaman::findOrFail($id);
+        $petugas = Petugas::all();
+        $peminjam = Peminjam::all();
+        return view('admin.peminjaman.show', compact('peminjaman','petugas','peminjam'));
     }
 
     /**
@@ -56,9 +72,12 @@ class PeminjamanController extends Controller
      * @param  \App\peminjaman  $peminjaman
      * @return \Illuminate\Http\Response
      */
-    public function edit(peminjaman $peminjaman)
+    public function edit($id)
     {
-        //
+        $peminjaman = peminjaman::findOrFail($id);
+        $petugas = Petugas::all();
+        $peminjam = Peminjam::all();
+        return view('admin.peminjaman.edit',compact('peminjaman','petugas','peminjam'));
     }
 
     /**
@@ -68,9 +87,16 @@ class PeminjamanController extends Controller
      * @param  \App\peminjaman  $peminjaman
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, peminjaman $peminjaman)
+    public function update(Request $request, $id)
     {
-        //
+        $peminjaman = peminjaman::findOrFail($id);
+        $peminjaman->petugas_id = $request->ptg_nama;
+        $peminjaman->peminjams_id = $request->pjm_nama;
+        $peminjaman->pjm_tgl = $request->pjm_tgl;
+        $peminjaman->pjm_tglkembali = $request->pjm_tglkembali;
+       
+        $peminjaman->save();
+        return redirect()->route('peminjaman.index');
     }
 
     /**
@@ -79,8 +105,10 @@ class PeminjamanController extends Controller
      * @param  \App\peminjaman  $peminjaman
      * @return \Illuminate\Http\Response
      */
-    public function destroy(peminjaman $peminjaman)
+    public function destroy($id)
     {
-        //
+        $peminjaman = peminjaman::destroy($id);
+        return redirect()->route('peminjaman.index');
     }
 }
+?>

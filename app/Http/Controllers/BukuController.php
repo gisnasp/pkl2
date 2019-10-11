@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\buku;
+use App\kategori;
+use App\penerbit;
 use Illuminate\Http\Request;
 
 class BukuController extends Controller
@@ -16,7 +18,6 @@ class BukuController extends Controller
     {
         $buku = Buku::all();
         return view('admin.buku.index', compact('buku'));
-        // return view('buku.index', compact('buku'));
     }
 
     /**
@@ -26,8 +27,10 @@ class BukuController extends Controller
      */
     public function create()
     {
-        $buku = buku::all();
-        return view('admin.buku.create', compact('buku'));
+        $buku = Buku::all();
+        $kategori = Kategori::all();
+        $penerbit = Penerbit::all();
+        return view('admin.buku.create', compact('buku', 'kategori', 'penerbit'));
     }
 
     /**
@@ -39,13 +42,14 @@ class BukuController extends Controller
     public function store(Request $request)
     {
         $buku = new Buku();
-        $buku->bukus_id = $request->bukus_id;
-        $buku->penerbits_id = $request->penerbits_id;
+        $buku->kategoris_id = $request->ktg_nama;
+        $buku->penerbits_id = $request->pbt_nama;
         $buku->buku_judul = $request->buku_judul;
         $buku->buku_jumlah = $request->buku_jumlah;
         $buku->buku_deskripsi = $request->buku_deskripsi;
         $buku->buku_pengarang = $request->buku_pengarang;
         $buku->buku_terbit = $request->buku_terbit;
+
         $buku->save();
         return redirect()->route('buku.index');
     }
@@ -56,9 +60,12 @@ class BukuController extends Controller
      * @param  \App\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function show(buku $buku)
+    public function show($id)
     {
-        //
+        $kategori = Kategori::all();
+        $penerbit = Penerbit::all();
+        $buku = Buku::findOrFail($id);
+        return view('admin.buku.show', compact('kategori', 'penerbit', 'buku'));
     }
 
     /**
@@ -67,9 +74,12 @@ class BukuController extends Controller
      * @param  \App\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function edit(buku $buku)
+    public function edit($id)
     {
-        //
+        $kategori = Kategori::all();
+        $penerbit = Penerbit::all();
+        $buku = Buku::findOrFail($id);
+        return view('admin.buku.edit', compact('kategori', 'penerbit', 'buku'));
     }
 
     /**
@@ -79,9 +89,19 @@ class BukuController extends Controller
      * @param  \App\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, buku $buku)
+    public function update(Request $request, $id)
     {
-        //
+        $buku = Buku::findOrFail($id);
+        $buku->kategoris_id = $request->ktg_nama;
+        $buku->penerbits_id = $request->pbt_nama;
+        $buku->buku_judul = $request->buku_judul;
+        $buku->buku_jumlah = $request->buku_jumlah;
+        $buku->buku_deskripsi = $request->buku_deskripsi;
+        $buku->buku_pengarang = $request->buku_pengarang;
+        $buku->buku_terbit = $request->buku_terbit;
+
+        $buku->save();
+        return redirect()->route('buku.index');
     }
 
     /**
@@ -90,8 +110,9 @@ class BukuController extends Controller
      * @param  \App\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function destroy(buku $buku)
+    public function destroy($id)
     {
-        //
+        $buku = buku::destroy($id);
+        return redirect()->route('buku.index');
     }
 }
