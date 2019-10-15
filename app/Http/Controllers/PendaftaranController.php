@@ -46,6 +46,7 @@ class PendaftaranController extends Controller
         $pendaftaran->peminjams_id = $request->pjm_nama;
         $pendaftaran->kartu_pembuatan = $request->kartu_pembuatan;
         $pendaftaran->kartu_akhir = $request->kartu_akhir;
+        $pendaftaran->kartu_aktif = $request->kartu_aktif;
        
         $pendaftaran->save();
         return redirect()->route('pendaftaran.index');
@@ -93,6 +94,7 @@ class PendaftaranController extends Controller
         $pendaftaran->peminjams_id = $request->pjm_nama;
         $pendaftaran->kartu_pembuatan = $request->kartu_pembuatan;
         $pendaftaran->kartu_akhir = $request->kartu_akhir;
+        $pendaftaran->kartu_aktif = $request->kartu_aktif;
        
         $pendaftaran->save();
         return redirect()->route('pendaftaran.index');

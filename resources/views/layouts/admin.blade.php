@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/charts/c3charts/c3.css')}}">
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/DataTables/datatables.min.css')}}"/>
+    <link href="{{asset('assets/select/select2/dist/css/select2.css')}}" rel="stylesheet"/>
     <title>Borrowing Books</title>
 </head>
 
@@ -201,6 +202,7 @@
     <script src="{{asset('assets/admin/vendor/charts/c3charts/d3-5.4.0.min.js')}}"></script>
     <script src="{{asset('assets/admin/vendor/charts/c3charts/C3chartjs.js')}}"></script>
     <script src="{{asset('assets/admin/libs/js/dashboard-ecommerce.js')}}"></script>
+    <script src="{{asset('assets/select/select2/dist/js/select2.js')}}"></script>
     <script src="{{asset('assets/DataTables/datatables.min.js')}}"></script>
     <script>
     $(document).ready(function() {

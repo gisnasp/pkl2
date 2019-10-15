@@ -38,9 +38,13 @@
                         <label for="">Detail Denda</label>
                         <input class="form-control" type="text" value="{{ $detail->detail_denda}}" name="detail_denda">
                     </div>
+                   
                     <div class="form-group">
                         <label for="">Status Kembali</label>
-                        <input class="form-control" type="text" value="{{ $detail->detail_kembali}}" name="detail_kembali">
+                        <select id="2" name="detail_kembali"  class="form-control" >
+                            <option value="{{ $detail->detail_kembali}}">Dipinjam</option>
+                            <option value="{{ $detail->detail_kembali}}">Dikembalikan</option>
+                        </select>
                     </div>
                 <button type="submit" name="Simpan" class="btn btn-md btn-info">Simpan</button>
                 <a name="" id="" class="btn btn-md btn-warning" href="{{route('detail.index')}}" role="button">kembali</a>

@@ -36,8 +36,15 @@
                         <label for="">Kartu Tanggal Akhir</label>
                         <input class="form-control" type="date" name="kartu_akhir">
                     </div>
+                    <div class="form-group">
+                        <label for="">Kartu Status Aktif</label>
+                        <select id="2" name="kartu_aktif" class="form-control">
+                            <option value="Aktif">Aktif</option>
+                            <option value="  Tidak Aktif">  Tidak Aktif</option>
+                        </select>
+                    </div>
                 <button type="submit" name="Simpan" class="btn btn-md btn-info">Simpan</button>
-                <a name="" id="" class="btn btn-md btn-warning" href="{{route('peminjaman.index')}}" role="button">kembali</a>
+                <a name="" id="" class="btn btn-md btn-warning" href="{{route('pendaftaran.index')}}" role="button">kembali</a>
                 </form>
             </div>
         </div>

@@ -19,6 +19,7 @@ class CreatePendaftaransTable extends Migration
             $table->unsignedbigInteger('peminjams_id');
             $table->date('kartu_pembuatan');
             $table->date('kartu_akhir');
+            $table->string('kartu_aktif');
             $table->foreign('petugas_id')->references('id')->on('petugas')->onDelete('cascade');
             $table->foreign('peminjams_id')->references('id')->on('peminjams')->onDelete('cascade');
             $table->timestamps();

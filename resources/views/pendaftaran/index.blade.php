@@ -20,6 +20,7 @@
                                 <th>Nama Peminjam</th>
                                 <th>Kartu Tanggal Pembuatan</th>
                                 <th>Kartu Tanggal Akhir</th>
+                                <th>Kartu Status Aktif</th>
                             <th style="text-align: center;">Aksi</th>
                             </tr>
                         </thead>
@@ -32,6 +33,7 @@
                                 <td>{{ $data->peminjams->pjm_nama}}</td>
                                 <td>{{ $data->kartu_pembuatan}}</td>
                                 <td>{{ $data->kartu_akhir}}</td>
+                                <td>{{ $data->kartu_aktif}}</td>
                                 <td>
                                     <center><form action="{{route('pendaftaran.destroy', $data->id)}}" method="post">
                                          {{csrf_field()}}

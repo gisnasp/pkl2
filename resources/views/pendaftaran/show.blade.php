@@ -34,6 +34,10 @@
                         <label for="">Kartu Tanggal Akhir</label>
                         <input class="form-control" type="date"  value="{{ $pendaftaran->kartu_akhir}}" name="kartu_akhir" readonly>
                     </div>
+                    <div class="form-group">
+                        <label for="">Kartu Status aktif</label>
+                        <input class="form-control" type="text"  value="{{ $pendaftaran->kartu_aktif}}" name="kartu_aktif" readonly>
+                    </div>
                 <a name="" id="" class="btn btn-md btn-warning" href="{{route('pendaftaran.index')}}" role="button">kembali</a>
                 </form>
             </div>
