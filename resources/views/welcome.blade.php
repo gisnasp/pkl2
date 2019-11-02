@@ -85,7 +85,7 @@
         <div class="row mb-5">
           <div class="col-md-7">
             <h2 class="heading">Macam-macam Buku</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, harum repudiandae provident neque voluptas odio nostrum officiis debitis et vitae, dolorem placeat fugiat recusandae aperiam aspernatur expedita alias, officia. Suscipit!</p>
+            <p>Novel adalah karangan prosa panjang yang mengandung rangkaian cerita kehidupan seseorang dengan orang yang berada di sekelilingnya dan menonjolkan watak (karakter) dan sifat setiap pelaku.</p>
           </div>        
         </div>
 
