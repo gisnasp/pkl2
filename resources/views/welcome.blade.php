@@ -166,7 +166,7 @@
       </div>
     </div>
 
-    <div class="site-section">
+    {{-- <div class="site-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-7">
@@ -188,27 +188,23 @@
           <img src="{{asset('assets/booke/booke/images/img_5.jpg')}}" alt="Image" class="img-fluid">
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <div class="author  d-lg-flex" id="about-section">
       <div class="bg-img" style="background-image: url('assets/booke/booke/gambar/buku.jpeg');"></div>
       <div class="text">
-        <h3>Hello It's Jane</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis qui voluptates illum harum minima accusantium praesentium eos aut ab. Voluptate nulla illum ullam maxime consequuntur labore qui delectus, omnis saepe.</p>
-        <p>Eos ratione repellat ea dignissimos iure ipsam sed dolore, excepturi id recusandae cumque sit, fugiat obcaecati necessitatibus nisi voluptate similique? Sed quae itaque nisi magnam amet aut maiores debitis temporibus.</p>
-        <p>Iste repellendus libero cumque facilis sint quas quis temporibus quia veritatis reiciendis obcaecati, magni, dolorum aspernatur laborum, est, sequi rerum! Perspiciatis facilis commodi libero ipsa minima reiciendis rerum, facere quaerat.</p>
-
-        div.social_
-
-        <div class="mt-5">
-          <span class="d-block text-black mb-4">Jane Smith, <span class="text-muted">Book Author &amp; Publisher</span></span>
-          <img src="{{asset('assets/booke/booke/images/signature.png')}}" alt="Image" class="img-fluid w-25">
-        </div>
+        <h3>Tentang Buku </h3>
+        <p>Novel, merupakan karya fiksi prosa yang tertulis dan narasi, biasanya dalam bentuk cerita.
+           Novel biasanya berisi kurang lebih 4.000 kata, lebih kompleks dari cerpen, dan tidak dibatasi keterbatasan struktural dan sajak.</p>
+        <p>Buku fiksi, merupakan buku yang diciptakan penulis sesuai dengan imajinasinya, bukan merupakan bukudengan cerita yang tidak nyata, 
+          namun pembaca merasa seolah-olah cerita tersebut nyata. Jenis buku ini adalahkumpulan cerita pendek, kumpulan puisi, kumpulan drama, serta novel.</p>
+        <p>Buku nonfiksi, merupakan buku berdasarkan data valid tentang pengetahuan tanpa mengurangi isi data tersebut. Jenis buku ini adalah buku referensi,
+           buku petunjuk/panduan, buku pelajaran, kamus, ensiklopedia, directory, peta.</p>
         
       </div>
     </div>
 
-    <footer class="site-footer">
+    {{-- <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
@@ -286,7 +282,7 @@
           
         </div>
       </div>
-    </footer>
+    </footer> --}}
   </div>
 
   <script src="{{asset('assets/booke/booke/js/jquery-3.3.1.min.js')}}"></script>
