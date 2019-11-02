@@ -1,76 +1,3 @@
-{{-- @extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection --}}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,8 +27,61 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/css/util.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/css/main.css')}}">
 <!--===============================================================================================-->
-</head>
-<body>
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/icomoon/style.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/animate.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">	
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/flaticon/font/flaticon.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/aos.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/jquery.fancybox.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/style.css')}}">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap">
+      
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-lg-3">
+              <h1 class="my-0 site-logo">Books</h1>
+            </div>
+            <div class="col-6 col-lg-9">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3 "><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                    <span class="icon-menu h3"></span>
+                  </a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li><a href="welcome" class="nav-link">Home</a></li>
+                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="about" class="nav-link">About Book</a></li>
+                  <li><a href="login" class="nav-link">Contact List</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div> <!-- END .site-navbar-wrap -->
 	
 	<div class="limiter">
 		<div class="container-login100">

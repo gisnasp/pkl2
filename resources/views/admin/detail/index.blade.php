@@ -6,9 +6,15 @@
             <div class="card">
                 <h5 class="card-header">Data Tables Detail</h5><br>
                 <center>
+
+                    @guest
+                    @else
+                    @role('admin')
                     <a href="{{ route('detail.create') }}"
                         class="la la-cloud-upload btn btn-info btn-rfur if you know that im lonelyfur if you know that im lonelyounded btn-floating btn-outline">&nbsp;Tambah Data
                     </a>
+                    @endrole 
+                    @endguest 
                 </center>
                 <div class="card-body">
                     <table id="datatable" class="table table-striped table-bordered" style="width:100%">
@@ -20,7 +26,12 @@
                             <th>Detail Tanggal Kembali </th>
                             <th>Detail Denda</th>
                             <th>Status Kembali</th>
+                            @guest
+                            @else
+                            @role('admin')
                             <th style="text-align: center;">Aksi</th>
+                            @endrole 
+                            @endguest
                             </tr>
                         </thead>
                         <tbody>
@@ -33,6 +44,10 @@
                                 <td>{{ $data->detail_tgl_kembali}}</td>
                                 <td>{{ $data->detail_denda}}</td>
                                 <td>{{ $data->detail_kembali}}</td>
+                                
+                                @guest
+                                @else
+                                @role('admin')
                                 <td>
                                     <center><form action="{{route('detail.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
@@ -48,6 +63,8 @@
                                     </center>
 								</td>
                             </tr>
+                            @endrole 
+                            @endguest 
                             @endforeach
                         </tbody>
                     </table>

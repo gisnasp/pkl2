@@ -19,7 +19,7 @@ class CreateBukusTable extends Migration
             $table->unsignedbigInteger('penerbits_id');
             $table->string('buku_judul');
             $table->integer('buku_jumlah');
-            $table->string('buku_deskripsi');
+            $table->text('buku_deskripsi');
             $table->string('buku_pengarang');
             $table->string('buku_terbit');
             $table->foreign('kategoris_id')->references('id')->on('kategoris')->onDelete('cascade');

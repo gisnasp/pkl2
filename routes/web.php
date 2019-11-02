@@ -46,5 +46,46 @@ Route::group(['prefix' => 'admin','middleware' =>['auth','role:admin']],function
 // });
     Route::resource('peminjam','PeminjamController');
     Route::resource('pendaftaran','PendaftaranController');
+    Route::resource('detail','DetailController');
 
-    
+    Route::get('book', function () {
+        return view('book');
+    });
+    Route::get('features', function () {
+        return view('features');
+    });
+    Route::get('about', function () {
+        return view('about');
+    });
+    Route::get('welcome', function () {
+        return view('welcome');
+    });
+
+    Route::get('hujan', function () {
+        return view('frontend.hujan');
+    });
+
+    Route::get('ayat', function () {
+        return view('frontend.ayat');
+    });
+    Route::get('beijing', function () {
+        return view('frontend.beijing');
+    });
+    Route::get('hujan2', function () {
+        return view('frontend.hujan2');
+    });
+    Route::get('manusia', function () {
+        return view('frontend.manusia');
+    });
+    Route::get('surga', function () {
+        return view('frontend.surga');
+    });
+    Route::get('danur', function () {
+        return view('frontend.danur');
+    });
+    Route::get('danur2', function () {
+        return view('frontend.danur2');
+    });
+    Route::get('danur3', function () {
+        return view('frontend.danur3');
+    });

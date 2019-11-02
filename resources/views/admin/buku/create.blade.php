@@ -38,7 +38,7 @@
                         </div>
                         <div class="form-group">
                             <label for="">Deskripsi Buku</label>
-                            <input class="form-control" type="text" name="buku_deskripsi">
+                            <textarea class="ckeditor" id="ck" name="buku_deskripsi"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="">Pengarang Buku</label>
@@ -56,4 +56,9 @@
     </div>
 </div>
 </div>
+@endsection
+@section('js')
+<script>
+    CKEDITOR.replace( 'ck' );
+</script>
 @endsection

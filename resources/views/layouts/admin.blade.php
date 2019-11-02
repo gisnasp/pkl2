@@ -146,9 +146,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('admin/petugas') }}">Petugas</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ url('admin/detail') }}">Detail</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('admin/buku') }}">Buku</a>
                             </li>
@@ -162,6 +162,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ url('/pendaftaran') }}">Pendaftaran</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/detail') }}">Detail</a>
                             </li>
                           
                             @endguest 
@@ -204,10 +207,29 @@
     <script src="{{asset('assets/admin/libs/js/dashboard-ecommerce.js')}}"></script>
     <script src="{{asset('assets/select/select2/dist/js/select2.js')}}"></script>
     <script src="{{asset('assets/DataTables/datatables.min.js')}}"></script>
+    <script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
     <script>
     $(document).ready(function() {
     $('#datatable').DataTable();
 });
+    </script>    
+    <script type="text/javascript">
+    function limit_checkbox(max,identifier)
+    {
+        var checkbox = $("input[name='detail_kembali']");
+        var checked  = $("input[name='detail_kembali']:checked").length;
+        checkbox.filter(':not(:checked)').prop('disabled', checked >= max);
+        
+    }
+    </script>
+    <script type="text/javascript">
+    function limit_checkbox(max,identifier)
+    {
+        var checkbox = $("input[name='kartu_aktif']");
+        var checked  = $("input[name='kartu_aktif']:checked").length;
+        checkbox.filter(':not(:checked)').prop('disabled', checked >= max);
+        
+    }
     </script>
 </body>
  

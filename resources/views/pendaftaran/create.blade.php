@@ -37,11 +37,9 @@
                         <input class="form-control" type="date" name="kartu_akhir">
                     </div>
                     <div class="form-group">
-                        <label for="">Kartu Status Aktif</label>
-                        <select id="2" name="kartu_aktif" class="form-control">
-                            <option value="Aktif">Aktif</option>
-                            <option value="  Tidak Aktif">  Tidak Aktif</option>
-                        </select>
+                        <label for="">Kartu Status</label><br>
+                        <input type="checkbox"  name="kartu_aktif" value="Aktif"  onchange="limit_checkbox(1,'check');"/><b> Aktif</b><br>
+                        <input type="checkbox"  name="kartu_aktif" value="Tidak Aktif"  onchange="limit_checkbox(1,'check');"/><b> Tidak Aktif</b>
                     </div>
                 <button type="submit" name="Simpan" class="btn btn-md btn-info">Simpan</button>
                 <a name="" id="" class="btn btn-md btn-warning" href="{{route('pendaftaran.index')}}" role="button">kembali</a>

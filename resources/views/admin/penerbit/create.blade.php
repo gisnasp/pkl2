@@ -14,7 +14,8 @@
                     </div>
                     <div class="form-group">
                         <label for="">Alamat Penerbit</label>
-                        <input class="form-control" type="text" name="pbt_alamat">
+                        <textarea class="form-control" rows="2" id="textarea" name="pbt_alamat">
+                        </textarea>
                     </div>
                     <div class="form-group">
                         <label for="">Telepon Penerbit</label>
