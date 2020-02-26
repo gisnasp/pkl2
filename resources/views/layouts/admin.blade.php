@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html lang="en">
- 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="{{asset('assets/admin/vendor/fonts/flag-icon-css/flag-icon.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/DataTables/datatables.min.css')}}"/>
     <link href="{{asset('assets/select/select2/dist/css/select2.css')}}" rel="stylesheet"/>
-    <title>Borrowing Books</title>
+    <title>Reading Books</title>
 </head>
 
 <body>
@@ -44,13 +44,13 @@
                                     <h5 class="mb-0 text-white nav-user-name"> {{ Auth::user()->name }} </h5>
                                     <span class="status"></span><span class="ml-2">Selamat Datang</span>
                                 </div>
-                                    <div>   
+                                    <div>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();"><i class="fas fa-power-off mr-2"></i>
                                             {{ __('Logout') }}
                                         </a>
-    
+
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
                                         </form>
@@ -70,7 +70,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header">
-                                    <h2 class="pageheader-title"><center>Dashboard Borrowing Books </center></h2>
+                                    <h2 class="pageheader-title"><center>Dashboard Reading Books</center></h2>
                                     <div class="page-breadcrumb">
                                         <nav aria-label="breadcrumb">
                                         </nav>
@@ -129,57 +129,22 @@
                                 <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
-                                                
+
                             <ul class="nav flex-column">
                             @guest
                             @else
                             @role('admin')
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('admin/peminjaman') }}">Peminjaman</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('admin/penerbit') }}">Penerbit</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="{{ url('admin/kategori') }}">Kategori</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('admin/petugas') }}">Petugas</a>
-                            </li>
-                            {{-- <li class="nav-item">
-                                <a class="nav-link" href="{{ url('admin/detail') }}">Detail</a>
-                            </li> --}}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('admin/buku') }}">Buku</a>
-                            </li>
-                            @endrole 
-                            @endguest 
-
-                            @guest
-                            @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/peminjam') }}">Peminjam</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/pendaftaran') }}">Pendaftaran</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/detail') }}">Detail</a>
-                            </li>
-                          
-                            @endguest 
-        
-                            @guest
-                            @else
-                            @role('petugas')
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('petugas/petugas') }}">Petugas</a>
+                                <a class="nav-link" href="{{ url('admin/artikel') }}">Artikel</a>
                             </li>
                             @endrole
-                            @endguest                             
+                            @endguest
                         </ul>
-                           
-                    </div>  
+
+                    </div>
                 </li>
     <!-- ============================================================== -->
     <!-- end main wrapper  -->
@@ -212,14 +177,14 @@
     $(document).ready(function() {
     $('#datatable').DataTable();
 });
-    </script>    
+    </script>
     <script type="text/javascript">
     function limit_checkbox(max,identifier)
     {
         var checkbox = $("input[name='detail_kembali']");
         var checked  = $("input[name='detail_kembali']:checked").length;
         checkbox.filter(':not(:checked)').prop('disabled', checked >= max);
-        
+
     }
     </script>
     <script type="text/javascript">
@@ -228,9 +193,10 @@
         var checkbox = $("input[name='kartu_aktif']");
         var checked  = $("input[name='kartu_aktif']:checked").length;
         checkbox.filter(':not(:checked)').prop('disabled', checked >= max);
-        
+
     }
     </script>
+    @yield('js')
 </body>
- 
+
 </html>

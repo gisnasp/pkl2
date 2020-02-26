@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Borrowing Books</title>
+    <title>Reading Books</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto&display=swap" rel="stylesheet">
@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">
-    
-    
+
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/flaticon/font/flaticon.css')}}">
-  
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/jquery.fancybox.min.css')}}">
-    
+
 
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/style.css')}}">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -34,10 +34,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap">
-      
+
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -54,9 +54,8 @@
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li><a href="welcome" class="nav-link">Home</a></li>
-                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="categori" class="nav-link">Categories</a></li>
                     <li><a href="about" class="nav-link">About Book</a></li>
-                    <li><a href="login" class="nav-link">Contact List</a></li>
                   </ul>
                 </div>
               </nav>
@@ -65,7 +64,7 @@
         </div>
       </div>
     </div> <!-- END .site-navbar-wrap -->
-    
+
     <div class="author  d-lg-flex" id="about-section">
         <div class="container">
             <div class="col-md-30">
@@ -74,9 +73,9 @@
           </div>
         <div class="container">
                 <div class="col-md-30"></div>
-           <h6>Sehari sebelum pernikahan dilangsungkan, Asmara (Revalina S. Temat) mendapatkan kenyataan pahit bahwa kekasihnya, Dewa (Ibnu Jamil) ternyata sempat berselingkuh dengan teman sekantornya Anita (Cynthia Ramlan). Walau Dewa memohon agar pernikahan tetap dilanjutkan, Asma terlanjur patah hati. Terlebih, hubungan sekali yang dilakukan ternyata membuahkan janin, Anita hamil. Dengan membawa kesedihan, Asma pun menerima tawaran pekerjaan di Beijing, peluang yang didapatkan 
+           <h6>Sehari sebelum pernikahan dilangsungkan, Asmara (Revalina S. Temat) mendapatkan kenyataan pahit bahwa kekasihnya, Dewa (Ibnu Jamil) ternyata sempat berselingkuh dengan teman sekantornya Anita (Cynthia Ramlan). Walau Dewa memohon agar pernikahan tetap dilanjutkan, Asma terlanjur patah hati. Terlebih, hubungan sekali yang dilakukan ternyata membuahkan janin, Anita hamil. Dengan membawa kesedihan, Asma pun menerima tawaran pekerjaan di Beijing, peluang yang didapatkan
                lewat bantuan Sekar (Laudya Cynthia Bella) dan Ridwan (Deddy Mahendra Desta), suaminya.</h6>
-           <h6>Di Beijing dalam salah satu perjalanan, Asma bertemu Zhongwen (Morgan Oey), lelaki tampan yang memperkenalkannya akan legenda cinta Ashima, putri cantik dari Yunan.Kebaikan dan perhatian Zhongwen, membuat Asma perlahan membuka hati. Walaupun sempat gamang ketika Dewa menyusulnya ke Beijing. Sayang, sebelum hubungan berlanjut, Asma terkena APS, 
+           <h6>Di Beijing dalam salah satu perjalanan, Asma bertemu Zhongwen (Morgan Oey), lelaki tampan yang memperkenalkannya akan legenda cinta Ashima, putri cantik dari Yunan.Kebaikan dan perhatian Zhongwen, membuat Asma perlahan membuka hati. Walaupun sempat gamang ketika Dewa menyusulnya ke Beijing. Sayang, sebelum hubungan berlanjut, Asma terkena APS,
                sebuah sindrom yang membuat nyawanya terancam dan bisa menemui kematian setiap waktu.Sebuah drama penutup akhir tahun, yang mengajarkan kepada kita: Jika tak kau temukan cinta, biarkan cinta menemukanmu.</h6>
         </div>
     </div>
@@ -90,10 +89,10 @@
     <script src="{{asset('assets/booke/booke/js/stickyfill.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/jquery.easing.1.3.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/isotope.pkgd.min.js')}}"></script>
-    
+
     <script src="{{asset('assets/booke/booke/js/jquery.fancybox.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/main.js')}}"></script>
-  
-       
+
+
     </body>
   </html>

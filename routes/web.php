@@ -24,35 +24,16 @@ Route::group(['prefix' => 'admin','middleware' =>['auth','role:admin']],function
         return view('admin.index');
     });
     // Route::resource('user','UserController');
-    Route::resource('buku','BukuController');
-    Route::resource('peminjaman','PeminjamanController');
-    Route::resource('detail','DetailController');
-    Route::resource('penerbit','PenerbitController');
-    Route::resource('peminjam','PeminjamController');
-    Route::resource('petugas','PetugasController'); 
     Route::resource('kategori','KategoriController');
-    Route::resource('pendaftaran','PendaftaranController');
-    
-    // Route::resource('kategori','KategoriController'); 
-});  
-    
-
-
-//     Route::group(['prefix' => 'petugas','middleware' =>['auth','role:petugas']],function(){
-//         Route::get('/',function(){
-//             return view('petugas.index');
-//  });
-//     Route::resource('petugas','PetugasController');  
-// });
-    Route::resource('peminjam','PeminjamController');
-    Route::resource('pendaftaran','PendaftaranController');
-    Route::resource('detail','DetailController');
+    Route::resource('artikel','ArtikelController');
+    // Route::resource('kategori','KategoriController');
+});
 
     Route::get('book', function () {
         return view('book');
     });
-    Route::get('features', function () {
-        return view('features');
+    Route::get('categori', function () {
+        return view('categori');
     });
     Route::get('about', function () {
         return view('about');
@@ -61,8 +42,8 @@ Route::group(['prefix' => 'admin','middleware' =>['auth','role:admin']],function
         return view('welcome');
     });
 
-    Route::get('hujan', function () {
-        return view('frontend.hujan');
+    Route::get('ayat2', function () {
+        return view('frontend.ayat2');
     });
 
     Route::get('ayat', function () {
@@ -88,4 +69,58 @@ Route::group(['prefix' => 'admin','middleware' =>['auth','role:admin']],function
     });
     Route::get('danur3', function () {
         return view('frontend.danur3');
+    });
+    Route::get('empat', function () {
+        return view('frontend.romantis.empat');
+    });
+    Route::get('kekasih', function () {
+        return view('frontend.romantis.kekasih');
+    });
+    Route::get('cintaa', function () {
+        return view('frontend.romantis.cintaa');
+    });
+    Route::get('dilan', function () {
+        return view('frontend.romantis.dilan');
+    });
+    Route::get('asiyah', function () {
+        return view('frontend.romantis.asiyah');
+    });
+    Route::get('ikhlas', function () {
+        return view('frontend.romantis.ikhlas');
+    });
+    Route::get('suramadu', function () {
+        return view('frontend.horor.suramadu');
+    });
+    Route::get('rumah', function () {
+        return view('frontend.horor.rumah');
+    });
+    Route::get('misteri', function () {
+        return view('frontend.horor.misteri');
+    });
+    Route::get('rasuk', function () {
+        return view('frontend.horor.rasuk');
+    });
+    Route::get('aku', function () {
+        return view('frontend.horor.aku');
+    });
+    Route::get('kamar', function () {
+        return view('frontend.horor.kamar');
+    });
+    Route::get('koala', function () {
+        return view('frontend.komedi.koala');
+    });
+    Route::get('bronto', function () {
+        return view('frontend.komedi.bronto');
+    });
+    Route::get('babi', function () {
+        return view('frontend.komedi.babi');
+    });
+    Route::get('marmut', function () {
+        return view('frontend.komedi.marmut');
+    });
+    Route::get('ubur', function () {
+        return view('frontend.komedi.ubur');
+    });
+    Route::get('radikus', function () {
+        return view('frontend.komedi.radikus');
     });

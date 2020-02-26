@@ -5,7 +5,7 @@
 	<title>Login Borrowing Books</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="{{asset('assetss/images/icons/favicon.ico')}}"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -15,13 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/animate/animate.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/css-hamburgers/hamburgers.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/animsition/css/animsition.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/select2/select2.min.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/vendor/daterangepicker/daterangepicker.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('assetss/css/util.css')}}">
@@ -32,15 +32,15 @@
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/animate.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.carousel.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.theme.default.min.css')}}">
-	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">	
+	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/flaticon/font/flaticon.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/aos.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/jquery.fancybox.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/booke/booke/css/style.css')}}">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -51,10 +51,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap">
-      
+
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -71,9 +71,8 @@
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li><a href="welcome" class="nav-link">Home</a></li>
-                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="categori" class="nav-link">Categories</a></li>
                     <li><a href="about" class="nav-link">About Book</a></li>
-                  <li><a href="login" class="nav-link">Contact List</a></li>
                   </ul>
                 </div>
               </nav>
@@ -82,7 +81,7 @@
         </div>
       </div>
 	</div> <!-- END .site-navbar-wrap -->
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -99,7 +98,7 @@
 						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
-					
+
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							Sign in
@@ -127,11 +126,11 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 
 	<div id="dropDownSelect1"></div>
-	
+
 <!--===============================================================================================-->
 	<script src="{{asset('assetss/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->

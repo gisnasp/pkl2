@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Borrowing Books</title>
+    <title>Reading Books</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto&display=swap" rel="stylesheet">
@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">
-    
-    
+
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/flaticon/font/flaticon.css')}}">
-  
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/jquery.fancybox.min.css')}}">
-    
+
 
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/style.css')}}">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -34,10 +34,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap">
-      
+
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -54,9 +54,8 @@
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li><a href="welcome" class="nav-link">Home</a></li>
-                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="categori" class="nav-link">Categories</a></li>
                     <li><a href="about" class="nav-link">About Book</a></li>
-                    <li><a href="login" class="nav-link">Contact List</a></li>
                   </ul>
                 </div>
               </nav>
@@ -65,7 +64,7 @@
         </div>
       </div>
     </div> <!-- END .site-navbar-wrap -->
-    
+
     <div class="author  d-lg-flex" id="about-section">
         <div class="row justify-content-center">
             <div class="col-md-30">
@@ -74,14 +73,14 @@
           </div>
         <div class="container">
                 <div class="col-md-30"></div>
-           <h6> Jangan heran jika mendapatiku sedang bicara sendirian atau tertawa tanpa seorang pun terlihat bersamaku. 
+           <h6> Jangan heran jika mendapatiku sedang bicara sendirian atau tertawa tanpa seorang pun terlihat bersamaku.
                Saat itu, mungkin saja aku sedang bersama salah satu dari lima sahabatku.</h6>
            <h6>Kalian mungkin tak melihatnya. Wajar. Mereka memang tak kasat mata dan sering disebut... hantu---
-               jiwa-jiwa penasaran atas kehidupan yang dianggap mereka tidak adil.</h6>  
+               jiwa-jiwa penasaran atas kehidupan yang dianggap mereka tidak adil.</h6>
             <h6>Kelebihanku dapat melihat mereka adalah anugerah sekaligus kutukan. Kelebihan ini membawaku ke dalam persahabatan unik dengan lima anak hantu Belanda.
                 Hari-hariku dilewati dengan canda Peter, pertengkaran Hans dan Hendrick dua sahabat yang sering berkelahi, alunan lirih biola William, dan tak lupa; rengekan si Bungsu Johnsen.
             </h6>
-            <h6>Jauh dari kehidupan "normal" adalah harga yang harus dibayar atas kebahagiaanku bersama mereka. Dan semua itu harus berubah ketika persahabatan kami meminta lebih, yaitu kebersamaan selamanya. 
+            <h6>Jauh dari kehidupan "normal" adalah harga yang harus dibayar atas kebahagiaanku bersama mereka. Dan semua itu harus berubah ketika persahabatan kami meminta lebih, yaitu kebersamaan selamanya.
                 Aku tak bisa memberi itu. Aku mulai menyadari bahwa hidup ini bukan hanya milikku seorang....</h6>
             <h6>Namaku Risa. Aku bisa melihat 'mereka'.</h6>
         </div>
@@ -96,10 +95,10 @@
     <script src="{{asset('assets/booke/booke/js/stickyfill.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/jquery.easing.1.3.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/isotope.pkgd.min.js')}}"></script>
-    
+
     <script src="{{asset('assets/booke/booke/js/jquery.fancybox.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/main.js')}}"></script>
-  
-       
+
+
     </body>
   </html>

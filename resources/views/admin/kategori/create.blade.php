@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">Membuat Data Kategori</div>
                 <div class="card-body">
-                    <form action="{{ route('kategori.store') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('kategori.store') }}" method="post" id="dataForm" enctype="multipart/form-data">
                         {{ csrf_field() }}
                     <div class="form-group">
                         <label for="">Nama Kategori</label>
@@ -20,4 +20,10 @@
     </div>
 </div>
 </div>
+@endsection
+
+@section('js')
+    <script>
+        $('#dataForm').trigger('reset');
+    </script>
 @endsection

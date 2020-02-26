@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Borrowing Books</title>
+    <title>Reading Books</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto&display=swap" rel="stylesheet">
@@ -11,19 +11,19 @@
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/bootstrap-datepicker.css')}}">
-    
-    
+
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/fonts/flaticon/font/flaticon.css')}}">
-  
+
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/jquery.fancybox.min.css')}}">
-    
+
 
     <link rel="stylesheet" href="{{asset('assets/booke/booke/css/style.css')}}">
-    
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -34,10 +34,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap">
-      
+
       <div class="site-navbar site-navbar-target js-sticky-header">
         <div class="container">
           <div class="row align-items-center">
@@ -54,9 +54,8 @@
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                     <li><a href="welcome" class="nav-link">Home</a></li>
-                    <li><a href="features" class="nav-link">Features</a></li>
+                    <li><a href="categori" class="nav-link">Categories</a></li>
                     <li><a href="about" class="nav-link">About Book</a></li>
-                    <li><a href="login" class="nav-link">Contact List</a></li>
                   </ul>
                 </div>
               </nav>
@@ -65,7 +64,7 @@
         </div>
       </div>
     </div> <!-- END .site-navbar-wrap -->
-    
+
     <div class="author  d-lg-flex" id="about-section">
         <div class="row justify-content-center">
             <div class="col-md-30">
@@ -74,17 +73,17 @@
           </div>
         <div class="container">
                 <div class="col-md-30"></div>
-            <h6>Pernikahan Arini (Laudya Cynthia Bella) dan Pras (Fedi Nuril) mendatangkan kebahagiaan dengan hadirnya Nadia, putri mereka. Pras yang baik dan setia selalu menenangkan Arini. Berbagai kisah perselingkuhan di sekelilingnya, 
+            <h6>Pernikahan Arini (Laudya Cynthia Bella) dan Pras (Fedi Nuril) mendatangkan kebahagiaan dengan hadirnya Nadia, putri mereka. Pras yang baik dan setia selalu menenangkan Arini. Berbagai kisah perselingkuhan di sekelilingnya,
                termasuk sahabat dekatnya, tidak sekalipun mengusik kepercayaan Arini terhadap sang suami. Arini pun berusaha mengabdikan diri sepenuh hati sebagai ibu dan istri. </h6>
-            <h6>Perjalanan takdir kemudian berujung ujian bagi cinta Arini dan Pras. Suatu hari, dalam perjalanan menuju kantor, Pras harus menolong korban yang mengalami kecelakaan mobil. 
+            <h6>Perjalanan takdir kemudian berujung ujian bagi cinta Arini dan Pras. Suatu hari, dalam perjalanan menuju kantor, Pras harus menolong korban yang mengalami kecelakaan mobil.
                Alangkah kagetnya Pras saat mengetahui korbannya adalah seorang perempuan dalam balutan baju pengantin. </h6>
-            <h6>Mei Rose (Raline Shah) berusaha bunuh diri setelah laki-laki yang berjanji menikahi ternyata menipunya. 
+            <h6>Mei Rose (Raline Shah) berusaha bunuh diri setelah laki-laki yang berjanji menikahi ternyata menipunya.
                 Padahal di perutnya ada janin berusia tujuh bulan. Mei Rose berhasil diselamatkan, namun mengalami koma, sementara anak laki-lakinya, Akbar, lahir dengan selamat. </h6>
             <h6>Pras tidak tega meninggalkan bayi dan ibu yang ternyata hidup sebatang kara tersebut. Di luar dugaan, Mei Rose melakukan percobaan bunuh diri lagi. Beruntung Mei Rose diselamatkan Pras.
                 Pras jatuh kasihan pada Mei Rose. Mei Rose meminta Pras untuk menikahinya. </h6>
-            <h6>Tidak disangka, Mei Rose sangat berbahagia dengan pernikahannya dengan Pras. Mei Rose merasa terharu dan bahagia bisa dinikahi oleh laki-laki sebaik Pras. 
+            <h6>Tidak disangka, Mei Rose sangat berbahagia dengan pernikahannya dengan Pras. Mei Rose merasa terharu dan bahagia bisa dinikahi oleh laki-laki sebaik Pras.
                 Dengan demikian Pras melakukan poligami. </h6>
-            <h6>Pras semakin hari semakin merasa bersalah pada Arini. Saat Pras berusaha menceritakan poligaminya pada Arini, ayah Arini meninggal. Suasana semakin berat bagi Pras saat mendengar pengakuan ibu Arini kalau ayahnya juga poligami. Demi kebahagiaan Arini, ibu merahasiakan poligami ayahnya dan ikhlas menerima takdirnya. 
+            <h6>Pras semakin hari semakin merasa bersalah pada Arini. Saat Pras berusaha menceritakan poligaminya pada Arini, ayah Arini meninggal. Suasana semakin berat bagi Pras saat mendengar pengakuan ibu Arini kalau ayahnya juga poligami. Demi kebahagiaan Arini, ibu merahasiakan poligami ayahnya dan ikhlas menerima takdirnya.
                 Akhirnya kenyataan poligami Pras diketahui juga oleh Arini. Bahtera perkawinannya yang ideal, runtuh seketika.</h6>
         </div>
     </div>
@@ -98,10 +97,10 @@
     <script src="{{asset('assets/booke/booke/js/stickyfill.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/jquery.easing.1.3.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/isotope.pkgd.min.js')}}"></script>
-    
+
     <script src="{{asset('assets/booke/booke/js/jquery.fancybox.min.js')}}"></script>
     <script src="{{asset('assets/booke/booke/js/main.js')}}"></script>
-  
-       
+
+
     </body>
   </html>
